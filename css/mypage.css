@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+/* マイページ用 */
+
+body {
+	padding-bottom: 50%;
+}
+
+/* フォント */
+@font-face{
+	/* http://webiconfonts.appspot.com/ */
+	font-family: 'WebIconFonts';
+	src: url('/font/webiconfonts.eot');
+	src: url('/font/WebIconFonts.ttf')  format('truetype'),
+		 url('/font/WebIconFonts.eot?') format('eot'),
+		 url('/font/WebIconFonts.woff') format('woff');
+}
+
+.icon {
+	display: inline-block;
+	font-family: WebIconFonts;
+	font-weight: normal;
+	vertical-align: 0.05em;
+}
+
+h2 .icon {
+    padding-right: 10px;
+	width: 1em;
+	text-align: center;
+}
+
+div#info {
+	padding: 10px;
+	border-bottom: 1px solid #ebebeb;
+	margin-bottom: 10px;
+	background: #FFF;
+}
+
+div#name {
+	text-align: left;
+}
+
+span#setting {
+	text-align: right;
+}
+
+div#tab_con {
+	margin: -10px 0 10px 0;
+	padding: 10px 0 0 0;
+	background: #d0d0d0;
+	color: #FFF;
+	border-bottom: 1px solid #26a194;
+}
+
+div.tab a img {
+	vertical-align: middle;
+}
+
+div.tab a,
+div.tab_act a:visited {
+	display: block;
+	margin: 0;
+	padding: 3px;
+	line-height: 30px;
+	background: #e9e9e9;
+}
+/*
+div.tab a:active,
+div.tab a:hover {
+	color: #ffd44c;
+	background: #FFF;
+	margin-top: -5px;
+	line-height: 35px;
+}
+*/
+
+div.tab_act a,
+div.tab_act a:hover,
+div.tab_act a:active,
+div.tab_act a:visited {
+	background: #29B7B0;
+	color: #FFF;
+	margin-top: -5px;
+	line-height: 35px;
+}
+
+div#busy {
+	margin: -10px 0 10px 0;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 1.5em;
+	background: #29B7B0;
+	color: #FFF;
+}
+
+span.st{
+	font-size: 0.8em;
+}
+
+div.status {
+	width: 920px;
+	margin: 10px auto;
+	padding: 10px;
+	background: #5fb1e9;
+	color: #FFF;
+	font-size: 1.3em;
+}
+
+div.sthome {
+	width: 918px;
+	border: 1px solid #bbb;
+	border-bottom: none;
+	border-top: none;
+	margin-bottom: -10px;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.wallet {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+#ui button {
+	margin: 0;
+	padding: 10px;
+	border: none;
+	background: #7a7a7a;
+	color: #FFF;
+	font-size: 0.85em;
+}
+
+#ui button:hover,
+#ui button:active {
+	background: #959595;
+	color: #FFF;
+}
+
+#ui button:disabled {
+	background: #a8a8a8;
+	color: #DDD;
+	font-size: 0.85em;
+}
+
+div#reload {
+	text-align: left;
+}
+div#pages {
+	text-align: right;
+}
+
+table#passbook {
+	width: 940px;
+	margin: 10px auto;
+	padding: 0;
+	border: 1px solid #CCC;
+	border-collapse: collapse; /* borderの間を空けない */
+	text-align: center;
+}
+
+table#passbook tr:nth-child(even) {
+	background: #ebebeb;
+
+}
+
+/* セルのサイズ決定 */
+table#passbook tr th:nth-child(1) { /* 利用開始 */
+	width: 150px;
+}
+table#passbook tr th:nth-child(2) { /* 決算時刻 */
+	width: 100px;
+}
+table#passbook tr th:nth-child(3) { /* 利用店舗 */
+	width: auto;
+}
+table#passbook tr th:nth-child(4) { /* 利用電力 */
+	width: 110px;
+}
+table#passbook tr th:nth-child(5) { /* チャージ */
+	width: 100px;
+}
+table#passbook tr th:nth-child(6) { /* チャージ */
+	width: 100px;
+}
+table#passbook tr th:nth-child(7) { /* 残高 */
+	width: 100px;
+}
+
+table#passbook tr th,
+table#passbook tr td {
+	border: 1px solid #bbb;
+}
+
+table#passbook tr th  {
+	line-height: 1.5em;
+	background: #ccc;
+}
+
+
+table#passbook tr td {
+	font-size: .93em;
+	line-height: 2em;
+}
+
+.na {
+	font-size: 0.8em;
+	color: #666;
+}
+
+h2 {
+	margin: 10px auto;
+	padding: 10px 15px;
+	width: 910px;
+	text-align: left;
+	font-size: 1.2em;
+	background: #f8ac24;
+	color: #FFF;
+}
+
+h3 {
+	margin: 10px auto -10px auto;
+	padding: 8px 15px;
+	width: 908px;
+	text-align: left;
+	font-size: 1.1em;
+	border: 1px solid #bbb;
+	border-bottom: none;
+	color: #FFF;
+	background: #29b7b0;
+}
+
+h3 span.IDm {
+	font-size: 0.8em;
+	line-height: 1.25em;
+	font-weight: normal;
+}
+
+.continue {
+	margin: -5px auto 0 auto;
+	width: 940px;
+	text-align: right;
+}
+
+div.aform {
+	margin: 10px auto;
+	padding: 10px;
+	width: 918px;
+	border: 1px solid #bbb;
+	color: #FFF;
+	background: #FFF;
+}
+
+div.aform input[type^="text"] {
+	width: 400px;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#success {
+	margin: 10px auto;
+	padding: 10px;
+	width: 920px;
+	background: #25a6db;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.derror {
+	margin: 10px auto;
+	padding: 10px;
+	width: 920px;
+	background: #7b7b7b;
+	color: #FFF;
+	font-weight: bold;
+}
+
+table.inp {
+	margin: 0 auto 10px auto;
+	width: 500px;
+}
+
+table.inp tr th,
+table.inp tr td {
+	padding: 3px 0;
+}
+
+table.inp tr th {
+	width: 180px;
+}
+
+table.inp tr td {
+	width: 280px;
+	text-align: left;
+}
+
+.nope input[type^="text"],
+.nope input[type^="password"] {
+	margin: 2px;
+	padding: 2px;
+	width: 250px;
+	background: #FFF;
+	border: #CCC 1px solid;
+	font-size: 1.2em;
+}
+
+.orz {
+	margin: 10px auto;
+	text-align: center;
+}

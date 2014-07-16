@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+	font-family: 'Arial','メイリオ', 'ＭＳ Ｐゴシック',
+		'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',
+		Sans-serif;
+	line-height: 1.18;
+}
+
+html {
+}
+
+body {
+	text-align: center;
+	font-size: ;
+}
+
+img {
+	border: none;
+}
+
+p {
+	font-size: 0.938em;
+}
+
+
+div#contents {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+div#logo {
+	margin: 1em;
+}
+
+div.program {
+	margin: 1em;
+}
+
+div.testcode {
+	margin: 1em;
+}
+
+div#copyright {
+	margin: 1em;
+	font-size: 0.85em;
+	color: #595959;
+}
+

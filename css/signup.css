@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* サインアップ用 */
+
+div#busy {
+	margin: 0 0 10px 0;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 1.5em;
+	background: #29B7B0;
+	color: #FFF;
+}
+
+table.inp {
+	margin: 0 auto;
+	width: 500px;
+}
+
+table.inp tr th,
+table.inp tr td {
+	padding: 3px 0;
+}
+
+table.inp tr th {
+	width: 180px;
+}
+
+table.inp tr td {
+	width: 280px;
+	text-align: left;
+}
+
+input[type^="text"],
+input[type^="password"] {
+	margin: 2px;
+	padding: 2px;
+	width: 250px;
+	background: #FFF;
+	border: #CCC 1px solid;
+	font-size: 1.2em;
+}
+
+#year {
+	width: 80px;
+}
+
+#month, #day {
+	width: 40px;
+}
+
+.w {
+	margin: 0 auto;
+	width: 500px;
+}
+
+#rule {
+	display: block;
+	width: 500px;
+	resize: none;
+}
+
+input#submit {
+	margin: 1em;
+	padding: 10px;
+	border: none;
+	background: #7a7a7a;
+	color: #FFF;
+	font-size: 0.85em;
+}
+
+input#submit:hover,
+input#submit:active {
+	background: #959595;
+	color: #FFF;
+}
+
+h2 {
+	margin: 10px auto;
+	padding: 10px 15px;
+	width: 470px;
+	text-align: center;
+	font-size: 1.2em;
+	background: #f8ac24;
+	color: #FFF;
+}

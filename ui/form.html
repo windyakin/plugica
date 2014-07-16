@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>plugica - ログイン</title>
+ 
+ <!--[if gte IE 9]>
+  <style type="text/css">
+  .gradient {
+  	filter: none;
+  }
+  </style>
+ <![endif]-->
+ 
+ <link rel="apple-touch-icon-precomposed" href="/img/webicon/icon-precomposed.png">
+ 
+ <link type="text/css" rel="stylesheet" href="/css/style.css">
+ <link type="text/css" rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+<div id="login">
+ 
+ <h1 id="logo"><img src="/img/logo_small.png" width="300" height="100" alt="plugica"></h1>
+ 
+ <div id="panel">
+  <form action="/mypage.cgi" method="post">
+   <label for="user">
+    <span class="labels">UserID</span>
+    <input type="text" name="user" id="user" class="txt">
+   </label>
+   <label for="pass">
+    <span class="labels">Password</span>
+    <input type="password" name="pass" id="pass" class="txt">
+   </label>
+   <label for="remember">
+    <input type="checkbox" name="remember" id="remember" onFocus="blur()"> ログイン状態を維持する
+   </label>
+   <div id="login_button"><button type="submit" id="yeah" onFocus="blur()">ログイン</button></div>
+  </form>
+ </div>
+ 
+ <div id="help_txt" class="left"><a href="/signup.cgi" id="help">初めての方へ</a></div>
+ <div id="help_txt" class="right"><a href="#" id="help">何かお困りですか？ &raquo;</a></div>
+ 
+ <div class="clear">&nbsp;</div>
+ 
+</div>
+
+<div id="copyright">
+ &copy; 2012 plugica project team
+</div>
+
+</body>
+</html>

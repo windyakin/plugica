@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/*ログイン用*/
+
+body {
+	background: #f7f7f7;
+}
+
+/* chrome */
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+	outline:none;
+}
+
+div#login {
+	position: absolute;
+	width: 400px;
+	height: 510px;
+	top: 50%;
+	left: 50%;
+	margin: -300px 0 0 -200px;
+}
+
+h1#logo {
+	width: 400px;
+	height: 100px;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+div#panel {
+	width: 338px;
+	height: 320px;
+	margin: 0;
+	padding: 30px;
+	border: 1px solid #AAA;
+	border-radius: 20px;
+	background: #fdfdfd url(../img/panelback.png);
+	box-shadow: 1px 5px 10px rgba(0,0,0,0.4);
+}
+
+label {
+	display: block;
+	margin: 1em 0;
+}
+
+span.labels {
+	display: block;
+}
+
+span.normal {
+	font-size: 0.85em;
+}
+
+input.txt {
+	width: 85%;
+	margin: 0.5em 0;
+	padding: 6px;
+	font-size: 1.4em;
+	text-align: center;
+	border-top: 2px solid #AAA;
+	border-left: 2px solid #AAA;
+	border-right: 1px solid #BBB;
+	border-bottom: 1px solid #BBB;
+	border-radius: 5px;
+	background: #fcfcfc;
+}
+
+
+input.txt:active, input.txt:focus {
+	border-top: 2px solid #95a982;
+	border-left: 2px solid #95a982;
+	border-right: 1px solid #b6cea0;
+	border-bottom: 1px solid #b6cea0;
+	background: #ffffff;
+}
+
+#login_button {
+	width: 138px;
+	height: 32px;
+	margin: 2em auto;
+	padding: 0;
+	border: 1px #000 solid;
+}
+
+#login_button button {
+	width: 100%;
+	height: 100%;
+	border: 1px #7b7b7b solid;
+	background: #686868;
+	background: -moz-linear-gradient(top,#686868,#474747);
+	background: -webkit-gradient(linear, left top, left bottom, from(#686868), to(#474747));
+	text-align: center;
+	padding: 6px 0;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-shadow: #000000 0 1px 0;
+	text-decoration: none;
+}
+
+#login_button button:hover {
+	background: #767676;
+	background: -moz-linear-gradient(top,#767676,#515151);
+	background: -webkit-gradient(linear, left top, left bottom, from(#767676), to(#515151));
+}
+
+#login_button button:active {
+	background: #5c5c5c;
+	background: -moz-linear-gradient(top,#5c5c5c,#515151);
+	background: -webkit-gradient(linear, left top, left bottom, from(#5c5c5c), to(#3e3e3e));
+	padding: 7px 0;
+}
+
+div#help_txt {
+	margin: 20px 10px;
+	font-size: 0.85em;
+}
+
+div#help_txt img {
+	vertical-align: middle;
+}
+
+.left {
+	text-align: left;
+	float: left;
+}
+
+.right {
+	text-align: right;
+	float: right;
+}
+
+.clear {
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+div#help_txt a#help {
+	color: #444;
+	text-decoration: none;
+}
+
+#copyright {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+}

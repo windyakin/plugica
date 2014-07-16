@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ 
+ <meta charset="UTF-8">
+ 
+ <title>plugica - %FILENAME%</title>
+ 
+ <link rel="apple-touch-icon-precomposed" href="/img/webicon/icon-precomposed.png">
+
+ <link rel="stylesheet" href="/css/default.css">
+ <link rel="stylesheet" href="/css/960_16_col.css">
+ <link rel="stylesheet" href="/css/%FILENAME%.css">
+ 
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+ 
+ <script src="/js/jquery-1.8.1.min.js"></script>
+ <script src="/js/jquery.animate-colors-min.js"></script>
+ 
+ <script>
+ $(function(){
+ 	
+ 	// メニューのフェード
+ 	$('div.tab a').not('div.tab_act a')
+ 		.mouseover(function(){
+ 			$(this).stop().animate(
+ 				{ 
+ 					backgroundColor: '#FFFFFF',
+ 					marginTop: '-3px',
+ 					lineHeight: '33px',
+ 					color: '#ffd44c',
+ 				},
+ 					100
+ 			)
+ 		})
+ 		.mouseout(function(){
+ 			$(this).stop().animate(
+ 				{
+ 					backgroundColor: '#e9e9e9',
+ 					marginTop: '0px',
+ 					lineHeight: '30px',
+ 					color: '#29B7B0',
+ 				},
+ 					200
+ 			)
+ 		})
+ 	
+ });
+ </script>
+ 
+</head>
+<body id="top">
+
+<header class="container_16">
+ <h1 class="grid_4"><a href="//plugica.sysken.org/"><img src="/img/logo_2.png" width="220" height="70" alt="plugica"></a></h1>
+</header>
+
+<div class="clear">&nbsp;</div>
+
+<!-- ここからcgiによる生成 -->
+<div class="article">
+
+<!--<script src="/js/busy.js"></script>-->

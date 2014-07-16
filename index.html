@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>plugica -もっと気軽にコンセント-</title>
+ 
+ <!--<link type="text/css" rel="stylesheet" href="/css/style.css">-->
+</head>
+<body>
+
+<h1><img src="/img/logo_small.png" alt="plugica"></h1>
+
+<h2>だいたい完成したプログラム</h2>
+<ul>
+ <li>
+ <a href="/auth.cgi" class="plink">auth.cgi</a>
+ <ul>
+  <li>plugicaのIDmとPMmから認証を行い，その結果とユーザの残高を返します。</li>
+ </ul>
+ </li>
+ <li>
+ <a href="/adjust.cgi" class="plink">adjust.cgi</a>
+ <ul>
+  <li>plugicaの残高を操作します。</li>
+ </ul>
+ </li>
+ <li>
+ <a href="/rate.cgi" class="plink">rate.cgi</a>
+ <ul>
+  <li>条件を入力するとplugicaの使用単価を出力します。</li>
+ </ul>
+ </li>
+ <li>
+ <a href="/mypage" class="plink">mypage.cgi</a>
+ <ul>
+  <li><s>ログインフォーム</s> マイページ</li>
+  <li><strong>9.18 名前変更</strong> login.cgi → mypage.cgi</li>
+ </ul>
+ </li>
+ <li>
+ <a href="/signup.cgi" class="plink">signup.cgi</a>
+ <ul>
+  <li>サインアップ(初期登録)ページ</li>
+  <li>値はダミーで実は何も仕事していないという噂が・・・</li>
+ </ul>
+ </li>
+ <li>
+ <a href="/popopopoon.cgi" class="plink">popopopoon.cgi</a>
+ <ul>
+  <li>魔法の言葉で(データが)ぽぽぽぽーん</li>
+ </ul>
+ </li>
+</ul>
+
+<h2>テスト用パラメータ</h2>
+<input type="text" style="width: 400px;" readonly="readonly" onClick="this.select()" value="?IDm=01270063568F6084&amp;PMm=00F0000002060300&amp;shopID=1">
+<ul>
+ <li><a href="/auth.cgi?IDm=01270063568F6084&amp;PMm=00F0000002060300&amp;shopID=1">認証</a></li>
+ <li><a href="/adjust.cgi?IDm=01270063568F6084&amp;PMm=00F0000002060300&amp;shopID=1&yen=0&cmd=used&kWh=0">決算</a></li>
+</ul>
+
+<!--<h2>asp.sysken.orgサーバCPU温度</h2>
+<p>
+現在<script src="/cputemp.cgi"></script>ぐらいです
+</p>
+-->
+ 
+<hr>
+<div id="copyright">
+&copy; 2012 plugica project team.
+</div>
+
+</body>
+</html>
